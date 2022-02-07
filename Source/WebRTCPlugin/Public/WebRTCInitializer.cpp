@@ -1,4 +1,6 @@
 ﻿#include "WebRTCInitializer.h"
+
+#include "CodeStoryPeerConnectionObserver.h"
 #include "WebSocketsModule.h" // Module definition
 #include "IWebSocket.h"       // Socket definition
 
@@ -40,6 +42,22 @@ void InitializeWebRTC()
     
 	TSharedPtr<IWebSocket> Socket = FWebSocketsModule::Get().CreateWebSocket(ServerURL, ServerProtocol);
 
+	CodeStoryPeerConnectionObserver* Observer = new CodeStoryPeerConnectionObserver;
+	rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface> PeerConnectionFactory = webrtc::CreatePeerConnectionFactory(
+		nullptr,
+		nullptr,
+		g_signal_thread.get(),
+		nullptr,
+		webrtc::CreateBuiltinAudioEncoderFactory(),
+		webrtc::CreateBuiltinAudioDecoderFactory(),
+		webrtc::CreateBuiltinVideoEncoderFactory(),
+		webrtc::CreateBuiltinVideoDecoderFactory(),
+		nullptr,
+		nullptr
+	);
+	rtc::scoped_refptr<webrtc::PeerConnectionInterface> LocalPeerConnection = GetDefaultPeerConnection(PeerConnectionFactory, nullptr, Observer);
+	
+	
 	// We bind all available events
 	Socket->OnConnected().AddLambda([]() -> void {
 		// This code will run once connected.

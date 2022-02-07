@@ -30,4 +30,9 @@ protected:
 	virtual void OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state) override;
 
 	virtual void OnSuccess(webrtc::SessionDescriptionInterface* desc) override;
+
+	virtual void OnFailure(webrtc::RTCError error) override;
+
+	virtual void AddRef() const override;
+	virtual rtc::RefCountReleaseStatus Release() const override;
 };

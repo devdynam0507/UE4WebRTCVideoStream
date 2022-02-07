@@ -29,7 +29,9 @@ public class WebRTCPlugin : ModuleRules
 				"Core",
 				"WebSockets",
 				"Json",
-				"JsonUtilities"
+				"JsonUtilities",
+				"OpenSSL",
+				
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -42,7 +44,8 @@ public class WebRTCPlugin : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"WebRTC"
+				"WebRTC",
+				"OpenSSL",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

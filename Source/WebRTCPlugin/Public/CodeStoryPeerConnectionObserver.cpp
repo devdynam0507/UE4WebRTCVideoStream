@@ -46,7 +46,7 @@ void CodeStoryPeerConnectionObserver::OnAddTrack(
 
 void CodeStoryPeerConnectionObserver::OnIceCandidate(const webrtc::IceCandidateInterface* candidate)
 {
-	PeerConnection_->AddIceCandidate(candidate);.
+	PeerConnection_->AddIceCandidate(candidate);
 //	std::string CandidateName;
 
 //	candidate->ToString(&CandidateName);
@@ -64,6 +64,11 @@ void CodeStoryPeerConnectionObserver::OnSuccess(webrtc::SessionDescriptionInterf
 	// TODO: Send Kurento Application Server
 }
 
+void CodeStoryPeerConnectionObserver::OnFailure(webrtc::RTCError error)
+{
+	UE_LOG(LogTemp, Log, TEXT("Description Error"));
+}
+
 void CodeStoryPeerConnectionObserver::OnSignalingChange(webrtc::PeerConnectionInterface::SignalingState new_state)
 {
 }
@@ -79,3 +84,16 @@ void CodeStoryPeerConnectionObserver::OnDataChannel(rtc::scoped_refptr<webrtc::D
 void CodeStoryPeerConnectionObserver::OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state)
 {
 }
+
+void CodeStoryPeerConnectionObserver::AddRef() const
+{
+}
+
+rtc::RefCountReleaseStatus CodeStoryPeerConnectionObserver::Release() const
+{
+	this->PeerConnection_->Close();
+	this->PeerConnection_->Release();
+	
+	return rtc::RefCountReleaseStatus::kDroppedLastRef;
+}
+

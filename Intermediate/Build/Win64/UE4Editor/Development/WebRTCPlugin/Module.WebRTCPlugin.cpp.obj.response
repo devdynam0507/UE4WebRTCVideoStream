@@ -236,6 +236,7 @@
 /I Runtime\Online\WebSockets\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\JsonUtilities
 /I Runtime\JsonUtilities\Public
+/I ThirdParty\OpenSSL\1.1.1k\include\Win64\VS2015
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
