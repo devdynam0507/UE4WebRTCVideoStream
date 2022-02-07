@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-WebRTCPlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Intermediate\Build\Win64\WebRTCProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.NoUndef.h.obj"
+"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\Development\WebRTCPlugin\Module.WebRTCPlugin.cpp.obj"
+"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\Development\WebRTCPlugin\Default.rc2.res"
+/OUT:"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\Development\WebRTCPlugin\UE4Editor-WebRTCPlugin.lib"
