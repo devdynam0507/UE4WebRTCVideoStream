@@ -46,6 +46,9 @@ public class WebRTCPlugin : ModuleRules
 				"SlateCore",
 				"WebRTC",
 				"OpenSSL",
+				"MediaUtils",
+				"AudioMixer",
+				"AVEncoder"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

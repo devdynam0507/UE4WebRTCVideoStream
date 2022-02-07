@@ -231,6 +231,7 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
+/I ThirdParty\OpenSSL\1.1.1k\include\Win64\VS2015
 /I "C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source"
 /I "C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public"
 /I Runtime\Online\WebSockets\Public

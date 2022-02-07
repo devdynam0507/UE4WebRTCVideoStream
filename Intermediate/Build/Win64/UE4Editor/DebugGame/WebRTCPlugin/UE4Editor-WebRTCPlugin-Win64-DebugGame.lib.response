@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-WebRTCPlugin-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Intermediate\Build\Win64\WebRTCProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.NoUndef.h.obj"
+"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\WebRTCPlugin\Module.WebRTCPlugin.cpp.obj"
+"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\WebRTCPlugin\Default.rc2.res"
+/OUT:"C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\WebRTCPlugin\UE4Editor-WebRTCPlugin-Win64-DebugGame.lib"

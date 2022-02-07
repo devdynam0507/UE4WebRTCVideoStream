@@ -231,12 +231,20 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
+/I ThirdParty\OpenSSL\1.1.1k\include\Win64\VS2015
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MediaUtils
+/I Runtime\MediaUtils\Public
+/I Runtime\Media\Public
+/I ThirdParty\Vulkan\Include
+/I Runtime\AVEncoder\Public
+/I Runtime\CUDA
+/I Runtime\CUDA\Source\Public
+/I ThirdParty\NVIDIA
 /I "C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source"
 /I "C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public"
 /I Runtime\Online\WebSockets\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\JsonUtilities
 /I Runtime\JsonUtilities\Public
-/I ThirdParty\OpenSSL\1.1.1k\include\Win64\VS2015
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -262,6 +270,7 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
 /I ThirdParty\WebRTC\4147\Include
 /I ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp
+/I ThirdParty\NVIDIA\CUDA
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"

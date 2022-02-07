@@ -47,9 +47,9 @@ void CodeStoryPeerConnectionObserver::OnAddTrack(
 void CodeStoryPeerConnectionObserver::OnIceCandidate(const webrtc::IceCandidateInterface* candidate)
 {
 	PeerConnection_->AddIceCandidate(candidate);
-//	std::string CandidateName;
+	std::string CandidateName;
 
-//	candidate->ToString(&CandidateName);
+	candidate->ToString(&CandidateName);
 	// TODO: Sending ice to remote
 }
 
@@ -57,10 +57,10 @@ void CodeStoryPeerConnectionObserver::OnSuccess(webrtc::SessionDescriptionInterf
 {
 	PeerConnection_->SetLocalDescription(CodeStoryPeerSetSessionDescriptionObserver::CreateObserver(), desc);
 
-//	std::string OfferSdp;
-//	desc->ToString(&OfferSdp);
+	std::string OfferSdp;
+	desc->ToString(&OfferSdp);
 
-//	auto OfferSdpInstance = webrtc::CreateSessionDescription(webrtc::SdpType::kOffer, OfferSdp, nullptr);
+	auto OfferSdpInstance = webrtc::CreateSessionDescription(webrtc::SdpType::kOffer, OfferSdp, nullptr);
 	// TODO: Send Kurento Application Server
 }
 

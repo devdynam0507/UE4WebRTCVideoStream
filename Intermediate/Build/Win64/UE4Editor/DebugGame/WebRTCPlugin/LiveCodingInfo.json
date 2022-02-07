@@ -1,0 +1,12 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.WebRTCPlugin.cpp.obj": [
+			"WebRTCPlugin.cpp.obj",
+			"CodeStoryPeerConnectionObserver.cpp.obj",
+			"CodeStoryVideoDecoder.cpp.obj",
+			"CodeStoryVideoStreamReceiver.cpp.obj",
+			"WebRTCInitializer.cpp.obj"
+		]
+	}
+}

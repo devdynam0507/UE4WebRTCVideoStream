@@ -1,0 +1,610 @@
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\DebugGame\WebRTCPlugin\Definitions.WebRTCPlugin.h
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Private/WebRTCPlugin.cpp
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCPlugin.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/MinWindows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\Windows.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\sdkddkver.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\excpt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\windef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\minwindef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\kernelspecs.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\basetsd.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\guiddef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\ktmtypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\apisetcconv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\minwinbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\apiquery2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processenv.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\debugapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\utilapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\handleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\errhandlingapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\fibersapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namedpipeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\profileapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\heapapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ioapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\synchapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\interlockedapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processthreadsapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\sysinfoapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\memoryapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\enclaveapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoollegacyapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\threadpoolapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\jobapi2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wow64apiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\libloaderapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securitybaseapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\namespaceapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\systemtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\processtopologyapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\securityappcontainer.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\realtimeapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\winerror.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\timezoneapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wingdi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winuser.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\tvout.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\datetimeapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\stringapiset.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnls.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincon.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\wincontypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\consoleapi3.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winver.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\verrsrc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winreg.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\reason.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winnetwk.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wnnc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\stralign.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\imm.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ime_cmodes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_receiver_interface.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\string
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xstring
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\iosfwd
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cstdio
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cwchar
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xmemory
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\limits
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cfloat
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\isa_availability.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cctype
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\vector
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/crypto/frame_decryptor_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/array_view.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\algorithm
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\array
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/checks.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/meta/type_traits.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\functional
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/options.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\ciso646
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\iso646.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/policy_checks.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/strings/string_view.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\iterator
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/internal/throw_delegate.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/macros.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/attributes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/optimization.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/port.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/numerics/safe_compare.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/type_traits.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/system/inline.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/system/rtc_export.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/media_types.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ref_count.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/dtls_transport_interface.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\memory
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/optional.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/utility/utility.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/internal/inline_variable.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/internal/identity.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/base/internal/invoke.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/bad_optional_access.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\stdexcept
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/internal/optional.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/memory/memory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/ice_transport_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/async_resolver_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/async_resolver_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/socket_address.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ip_address.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\winsock2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\ws2def.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\inaddr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\qos.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ws2tcpip.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\ws2ipdef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\in6addr.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/byte_order.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/system/arch.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/win32.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/third_party/sigslot/sigslot.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\set
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xtree
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtc_error.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/logging.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\sstream
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\istream
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\ostream
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\ios
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocnum
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cmath
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\streambuf
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xiosbase
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\share.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\system_error
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\__msvc_system_error_abi.hpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cerrno
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xcall_once.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xerrc.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocale
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xfacet
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocinfo.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\clocale
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\locale.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/constructor_magic.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/deprecation.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/strings/string_builder.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/string_encode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/string_to_number.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtc_event_log/rtc_event_log.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtc_event_log/rtc_event.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtc_event_log_output.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/task_queue/task_queue_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/task_queue/task_queue_base.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/task_queue/queued_task.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/thread_annotations.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/scoped_refptr.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ssl_certificate.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/buffer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/zero_memory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/frame_transformer_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/encoded_frame.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/encoded_frame.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/encoded_image.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\map
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_packet_infos.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/ref_counted_base.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ref_counter.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_packet_info.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_headers.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/units/timestamp.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/units/time_delta.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/units/unit_base.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/numerics/safe_conversions.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/numerics/safe_conversions_impl.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/color_space.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/hdr_metadata.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_content_type.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_frame_marking.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_rotation.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_timing.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_types.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_codec_constants.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_codec_type.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_frame_type.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/rtp_rtcp/source/rtp_video_header.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/container/inlined_vector.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/algorithm/algorithm.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/container/internal/inlined_vector.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/container/internal/compressed_tuple.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/span.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/internal/span.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/variant.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/internal/variant.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/types/bad_variant_access.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/rtp/dependency_descriptor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/codecs/h264/include/h264_globals.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/codecs/interface/common_constants.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/codecs/vp8/include/vp8_globals.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/codecs/vp9/include/vp9_globals.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/include/video_codec_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_frame.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_frame_buffer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/video_decoder.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/video_codec.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_bitrate_allocation.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/video_encoder.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/fec_controller_override.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/units/data_rate.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/units/data_size.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/units/frequency.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/generic_frame_descriptor/generic_frame_info.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/include/module_common_types.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/include/video_error_codes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/include/video_coding_defines.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/media_stream_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_options.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/recordable_encoded_frame.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_sink_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_source_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/audio_processing/include/audio_processing_statistics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/proxy.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/event.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/message_handler.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/function_view.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ref_counted_object.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/thread.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\queue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\deque
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/critical_section.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/platform_thread_types.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/location.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/stringize_macros.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/socket_server.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/socket_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/async_socket.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/socket.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/thread_message.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_parameters.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_transceiver_direction.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/rtp/rtp_source.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/data_channel_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/copy_on_write_buffer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/peer_connection_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio/audio_mixer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio/audio_frame.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio/channel_layout.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_decoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_codec_pair_id.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_decoder.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_format.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_encoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_encoder.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/call/bitrate_allocation.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/call/call_factory_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/crypto/crypto_options.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/fec_controller.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/include/module_fec_types.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/jsep.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/neteq/neteq_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/neteq/neteq.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\system_wrappers/include/clock.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/synchronization/rw_lock_wrapper.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\system_wrappers/include/ntp_time.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/network_state_predictor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/packet_socket_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/async_packet_socket.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/dscp.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/network/sent_packet.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/time_utils.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/proxy_info.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/crypt_string.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtc_event_log/rtc_event_log_factory_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_sender_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/crypto/frame_encryptor_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/dtmf_sender_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/rtp_transceiver_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/sctp_transport_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/set_remote_description_observer_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/stats/rtc_stats_collector_callback.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/stats/rtc_stats_report.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/stats/rtc_stats.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/system/rtc_export_template.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/stats_types.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/thread_checker.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/synchronization/sequence_checker.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/bitrate_settings.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/enums.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/media/media_transport_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/data_channel_transport_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/media/audio_transport.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/media/video_transport.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/network_control.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/network_types.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/webrtc_key_value_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/network_route.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/network_constants.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/turn_customizer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/media_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/media_engine.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_bitrate_allocator_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/video_bitrate_allocator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\call/audio_state.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/audio_device/include/audio_device.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/audio_device/include/audio_device_defines.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/audio_processing/include/audio_processing.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\math.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio/echo_canceller3_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio/echo_control.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/audio_processing/include/config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/arraysize.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/system/file_wrapper.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/codec.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/sdp_video_format.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/media_constants.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/media_channel.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/media/media_transport_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/video_encoder_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\call/video_receive_stream.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/call/transport.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\call/rtp_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/rtp_rtcp/include/rtcp_statistics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/rtp_rtcp/include/rtp_rtcp_defines.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\third_party\abseil-cpp\absl/algorithm/container.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\assert.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\numeric
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\unordered_map
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xhash
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xbit_ops.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\unordered_set
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/rtp_rtcp/source/rtcp_packet/remote_estimate.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/rtp_rtcp/source/rtcp_packet/app.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/rtp_rtcp/source/rtcp_packet.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/include/quality_limitation_reason.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/delayable.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/stream_params.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/rid_description.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/unique_id_generator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/rtp_rtcp/include/report_block_data.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/callback.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/video_common.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/port_allocator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/port.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/candidate.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/transport/stun.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/byte_buffer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\logging/rtc_event_log/events/rtc_event_ice_candidate_pair.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\logging/rtc_event_log/events/rtc_event_ice_candidate_pair_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\logging/rtc_event_log/ice_logger.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/candidate_pair_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/connection.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/connection_info.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/p2p_transport_channel_ice_field_trials.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/stun_request.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/transport_description.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/p2p_constants.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ssl_fingerprint.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/network.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/mdns_responder_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/network_monitor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/numerics/event_based_exponential_moving_average.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/rate_tracker.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/port_interface.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/net_helper.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/weak_ptr.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/helpers.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/rtc_certificate.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/rtc_certificate_generator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ssl_identity.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ssl_stream_adapter.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/stream.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/create_peerconnection_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/video_decoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/video_encoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/task_queue/default_task_queue_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_decoder_factory_template.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/audio_encoder_factory_template.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/builtin_audio_decoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/builtin_video_decoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/builtin_video_encoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/opus/audio_decoder_opus.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/opus/audio_encoder_opus.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/opus/audio_encoder_opus_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/audio_codecs/builtin_audio_encoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video/i420_buffer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/memory/aligned_malloc.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/ssl_adapter.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/net_helpers.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/signal_thread.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/string_utils.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\pc/session_description.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/crypto_params.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\p2p/base/transport_info.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\pc/media_protocol_names.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\pc/simulcast_description.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\pc/video_track_source.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/notifier.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/engine/internal_decoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/engine/internal_encoder_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/h264_profile_level_id.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/adapted_video_track_source.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/video_adapter.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/video_broadcaster.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/base/video_source_base.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_capture/video_capture_factory.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_capture/video_capture.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/include/module.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_capture/video_capture_defines.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/libyuv/include/webrtc_libyuv.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/audio_device/audio_device_buffer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/task_queue.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/task_utils/to_queued_task.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\rtc_base/task_utils/pending_task_safety_flag.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/codecs/h264/include/h264.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/h264/h264_bitstream_parser.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/bitstream_parser.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/h264/pps_parser.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/h264/sps_parser.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/h264/h264_common.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryPeerConnectionObserver.cpp
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryPeerConnectionObserver.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryVideoStreamReceiver.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryVideoDecoder.cpp
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryVideoDecoder.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoDecoder.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoCommon.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d11.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdce.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcdcep.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcnterr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcasync.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcndr.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\rpcnsip.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\rpcsal.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ole2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\objbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\combaseapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wtypesbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\guiddef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\unknwnbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\objidlbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\guiddef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\cguid.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\coml2api.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\objidl.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\unknwn.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\wtypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\propidlbase.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\oaidl.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\urlmon.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\oleidl.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\servprov.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\msxml.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\propidl.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\oleauto.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\ocidl.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\dxgi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\dxgicommon.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\dxgitype.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\dxgiformat.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3dcommon.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d11sdklayers.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d10_1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d10.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d10sdklayers.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d10misc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d10shader.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d10effect.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d10_1shader.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\mfobjects.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\propsys.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\shtypes.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\StructuredQueryCondition.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\propkeydef.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\mediaobj.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\mmreg.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\mftransform.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\mfapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\avrt.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\mferror.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\mfidl.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\codecapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\shlwapi.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\pshpack8.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\poppack.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\mfreadwrite.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d11_1.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\dxgi1_2.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d12.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um\d3d12sdklayers.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\dxgi1_4.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared\dxgi1_3.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoDecoderInput.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoDecoderAllocationTypes.h
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryVideoStreamReceiver.cpp
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCInitializer.cpp
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Online\WebSockets\Public\WebSocketsModule.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Online\WebSockets\Public\IWebSocket.h

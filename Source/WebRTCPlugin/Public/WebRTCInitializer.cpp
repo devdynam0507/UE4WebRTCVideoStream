@@ -37,6 +37,8 @@ rtc::scoped_refptr<webrtc::PeerConnectionInterface> GetDefaultPeerConnection(
 
 void InitializeWebRTC()
 {
+	g_signal_thread->Start();
+	
 	const FString ServerURL = TEXT("ws://45.32.249.81:8080/call"); // Your server URL. You can use ws, wss or wss+insecure.
 	const FString ServerProtocol = TEXT("ws");              // The WebServer protocol you want to use.
     
@@ -48,15 +50,14 @@ void InitializeWebRTC()
 		nullptr,
 		g_signal_thread.get(),
 		nullptr,
-		webrtc::CreateBuiltinAudioEncoderFactory(),
-		webrtc::CreateBuiltinAudioDecoderFactory(),
-		webrtc::CreateBuiltinVideoEncoderFactory(),
-		webrtc::CreateBuiltinVideoDecoderFactory(),
+		nullptr,
+		nullptr,
+		nullptr,
+		nullptr,
 		nullptr,
 		nullptr
 	);
 	rtc::scoped_refptr<webrtc::PeerConnectionInterface> LocalPeerConnection = GetDefaultPeerConnection(PeerConnectionFactory, nullptr, Observer);
-	
 	
 	// We bind all available events
 	Socket->OnConnected().AddLambda([]() -> void {
@@ -72,7 +73,7 @@ void InitializeWebRTC()
     
 	Socket->OnConnectionError().AddLambda([](const FString & Error) -> void {
 		// This code will run if the connection failed. Check Error to see what happened.
-		UE_LOG(LogTemp, Log, TEXT("Error ssibal %s"), *Error)
+		UE_LOG(LogTemp, Log, TEXT("Error %s"), *Error)
 	});
     
 	Socket->OnClosed().AddLambda([](int32 StatusCode, const FString& Reason, bool bWasClean) -> void {
@@ -94,8 +95,5 @@ void InitializeWebRTC()
     
 	// And we finally connect to the server. 
 	Socket->Connect();
-	
-	g_signal_thread->Start();
-
 }
 
