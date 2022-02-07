@@ -484,6 +484,53 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\common_video/h264/h264_common.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryAudioDeviceModule.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioMixer\Public\AudioMixerDevice.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\AudioDevice.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/QuartzSubscription.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerClockHandle.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzSubsystem.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerClockManager.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioMixer\Public\Quartz\AudioMixerClock.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioMixer\Public\Quartz/QuartzMetronome.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\QuartzSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer\AudioMixerClockHandle.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioMixer\Public\Quartz/AudioMixerQuantizedCommands.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SignalProcessing\Public\DSP/MultithreadedPatching.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SignalProcessing\Public\DSP/SpectrumAnalyzer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SignalProcessing\Public\DSP/AudioFFT.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SignalProcessing\Public\DSP/FFTAlgorithm.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SignalProcessing\Public\SampleBuffer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundMix.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundMix.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundSubmix.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioExtensions\Public\IAudioEndpoint.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioExtensions\IAudioEndpoint.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AudioExtensions\Public\ISoundfieldEndpoint.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioExtensions\ISoundfieldEndpoint.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound\SampleBufferIO.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound\SoundEffectSubmix.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundEffectSubmix.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundSubmix.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundSourceBus.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/SoundWaveProcedural.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundWaveProcedural.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/AudioBus.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioBus.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundSourceBus.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\AudioVirtualLoop.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\ActiveSound.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\Audio/AudioDebug.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SignalProcessing\Public\DSP/VolumeFader.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/StrongObjectPtr.h
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryAudioDeviceModule.cpp
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryPeerConnectionObserver.cpp
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryPeerConnectionObserver.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryVideoStreamReceiver.h
@@ -600,6 +647,17 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/Hi
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoDecoderInput.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoDecoderAllocationTypes.h
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryVideoStreamReceiver.cpp
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/FAudioCapturer.cpp
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\FAudioCapturer.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCInitializer.cpp
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h

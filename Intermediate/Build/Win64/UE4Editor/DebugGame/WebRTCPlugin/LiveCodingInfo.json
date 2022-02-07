@@ -3,9 +3,11 @@
 	{
 		"Module.WebRTCPlugin.cpp.obj": [
 			"WebRTCPlugin.cpp.obj",
+			"CodeStoryAudioDeviceModule.cpp.obj",
 			"CodeStoryPeerConnectionObserver.cpp.obj",
 			"CodeStoryVideoDecoder.cpp.obj",
 			"CodeStoryVideoStreamReceiver.cpp.obj",
+			"FAudioCapturer.cpp.obj",
 			"WebRTCInitializer.cpp.obj"
 		]
 	}

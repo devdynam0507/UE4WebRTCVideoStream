@@ -48,7 +48,8 @@ public class WebRTCPlugin : ModuleRules
 				"OpenSSL",
 				"MediaUtils",
 				"AudioMixer",
-				"AVEncoder"
+				"AVEncoder",
+				"AudioMixer",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

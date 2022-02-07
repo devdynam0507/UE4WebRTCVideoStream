@@ -74,7 +74,6 @@ THIRD_PARTY_INCLUDES_START
 // because WebRTC uses STL
 #include <string>
 #include <memory>
-
 #if PLATFORM_WINDOWS
 #pragma warning(pop)
 
@@ -92,5 +91,6 @@ THIRD_PARTY_INCLUDES_START
 THIRD_PARTY_INCLUDES_END
 
 #include "CoreMinimal.h"
+#include "CodeStoryAudioDeviceModule.h"
 
 static void InitializeWebRTC();
