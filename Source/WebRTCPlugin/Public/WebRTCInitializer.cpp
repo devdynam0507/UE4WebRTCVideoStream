@@ -89,9 +89,8 @@ void InitializeWebRTC()
 		nullptr,
 		nullptr,
 		nullptr,
-		SetupAudioProcessingModule(
+		SetupAudioProcessingModule()
 	);
-	webrtc::CreateModularPeerConnectioN
 	//rtc::scoped_refptr<webrtc::PeerConnectionInterface> LocalPeerConnection = GetDefaultPeerConnection(PeerConnectionFactory, nullptr, Observer);
 	
 	// We bind all available events
