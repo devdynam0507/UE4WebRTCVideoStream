@@ -6,7 +6,10 @@
 class CodeStoryWebRTCClient : public WebSocketObserver, public webrtc::PeerConnectionObserver, public webrtc::CreateSessionDescriptionObserver
 {
 public:
-	CodeStoryWebRTCClient(WebSocketWrapper& Wrapper, rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface> PeerConnectionFactory, TSharedRef<CodeStoryVideoStreamReceiver> VideoReceiver)
+	CodeStoryWebRTCClient(
+		WebSocketWrapper Wrapper,
+		rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface> &PeerConnectionFactory,
+		TSharedRef<CodeStoryVideoStreamReceiver> &VideoReceiver)
 		: PeerConnectionFactory(PeerConnectionFactory),
 	      VideoReceiver(VideoReceiver),
 	      WebSocket(Wrapper)

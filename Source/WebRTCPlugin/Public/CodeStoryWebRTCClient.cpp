@@ -125,3 +125,14 @@ void CodeStoryWebRTCClient::OnDataChannel(rtc::scoped_refptr<webrtc::DataChannel
 void CodeStoryWebRTCClient::OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state)
 {
 }
+
+void CodeStoryWebRTCClient::AddRef() const
+{
+	
+}
+
+rtc::RefCountReleaseStatus CodeStoryWebRTCClient::Release() const
+{
+	return rtc::RefCountReleaseStatus::kDroppedLastRef;
+}
+
