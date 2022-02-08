@@ -339,7 +339,7 @@ void FAudioPlayoutRequester::Runnable::Exit()
 
 int32 CodeStoryAudioDeviceModule::ActiveAudioLayer(AudioLayer* audioLayer) const
 {
-	*audioLayer = AudioDeviceModule::kDummyAudio;
+	*audioLayer = AudioDeviceModule::kPlatformDefaultAudio;
 	return 0;
 }
 

@@ -92,5 +92,3 @@ THIRD_PARTY_INCLUDES_END
 
 #include "CoreMinimal.h"
 #include "CodeStoryAudioDeviceModule.h"
-
-static void InitializeWebRTC();

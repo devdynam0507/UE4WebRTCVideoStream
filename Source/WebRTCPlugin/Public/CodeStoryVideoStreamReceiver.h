@@ -4,5 +4,6 @@
 class CodeStoryVideoStreamReceiver : public rtc::VideoSinkInterface<webrtc::VideoFrame>
 {
 public:
-	void OnFrame(const webrtc::VideoFrame& frame) override;
+	virtual void OnFrame(const webrtc::VideoFrame& frame) override;
+	
 };

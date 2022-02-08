@@ -7,8 +7,11 @@
 			"CodeStoryPeerConnectionObserver.cpp.obj",
 			"CodeStoryVideoDecoder.cpp.obj",
 			"CodeStoryVideoStreamReceiver.cpp.obj",
+			"CodeStoryWebRTCClient.cpp.obj",
+			"CodeStoryWebRTCFacade.cpp.obj",
 			"FAudioCapturer.cpp.obj",
-			"WebRTCInitializer.cpp.obj"
+			"WebRTCInitializer.cpp.obj",
+			"WebSocketWrapper.cpp.obj"
 		]
 	}
 }
