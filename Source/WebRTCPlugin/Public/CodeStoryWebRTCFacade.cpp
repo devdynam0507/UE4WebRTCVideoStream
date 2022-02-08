@@ -25,8 +25,11 @@ TSharedRef<CodeStoryWebRTCClient> CodeStoryWebRTCFacade::CreateClient(
 	);
 
 	// Create WebRTC Client Ref 
-	TSharedRef<CodeStoryWebRTCClient> WebRTCClientRef =
-		MakeShared<CodeStoryWebRTCClient>(CreateWebSocket(SignalingHost, CodeStoryWebSocket::EnumToString(SignalingProtocol)), PeerConnectionFactory, VideoCallbackImpl);
+	TSharedRef<CodeStoryWebRTCClient> WebRTCClientRef = MakeShared<CodeStoryWebRTCClient>(
+			CreateWebSocket(SignalingHost, CodeStoryWebSocket::EnumToString(SignalingProtocol)),
+			PeerConnectionFactory,
+			VideoCallbackImpl
+	);
 	
 	return WebRTCClientRef;
 }
