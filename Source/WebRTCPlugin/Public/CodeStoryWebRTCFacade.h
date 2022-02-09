@@ -1,12 +1,6 @@
 ﻿#pragma once
 #include "CodeStoryWebRTCClient.h"
-#include "WebRTCInitializer.h"
-
-namespace CodeStoryWebRTCThread
-{
-	static std::unique_ptr<rtc::Thread> SIGNALING_THREAD = rtc::Thread::CreateWithSocketServer();
-	static std::unique_ptr<rtc::Thread> WORKER_THREAD = rtc::Thread::Create();	
-}
+#include "WebRTCThread.h"
 
 namespace CodeStoryWebSocket
 {
@@ -32,7 +26,7 @@ namespace CodeStoryWebSocket
 class CodeStoryWebRTCFacade
 {
 public:
-	static TSharedRef<CodeStoryWebRTCClient> CreateClient(const FString& SignalingHost, CodeStoryWebSocket::ProtocolType SignalingProtocol, TSharedRef<CodeStoryVideoStreamReceiver> VideoCallbackImpl);
+	static CodeStoryWebRTCClient CreateClient(const FString& SignalingHost, CodeStoryWebSocket::ProtocolType SignalingProtocol, TSharedRef<CodeStoryVideoStreamReceiver> VideoCallbackImpl);
 
 protected:
 	static webrtc::AudioProcessing* SetupAudioProcessingModule();

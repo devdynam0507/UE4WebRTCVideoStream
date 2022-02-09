@@ -3,13 +3,14 @@
 #include "FAudioCapturer.h"
 #include "WebRTCLogging.h"
 
-TSharedRef<CodeStoryWebRTCClient> CodeStoryWebRTCFacade::CreateClient(
+CodeStoryWebRTCClient CodeStoryWebRTCFacade::CreateClient(
 	const FString& SignalingHost,
 	CodeStoryWebSocket::ProtocolType SignalingProtocol,
 	TSharedRef<CodeStoryVideoStreamReceiver> VideoCallbackImpl
 )
 {
 	RedirectRTCLogToUE4(rtc::LS_VERBOSE);
+	rtc::InitializeSSL();
 	
 	// Start WebRTC peer Thread
 	CodeStoryWebRTCThread::SIGNALING_THREAD->Start();
@@ -23,20 +24,18 @@ TSharedRef<CodeStoryWebRTCClient> CodeStoryWebRTCFacade::CreateClient(
 	rtc::scoped_refptr<FAudioCapturer>(new FAudioCapturer),
 	webrtc::CreateAudioEncoderFactory<webrtc::AudioEncoderOpus>(), 
 	webrtc::CreateAudioDecoderFactory<webrtc::AudioDecoderOpus>(),
-	nullptr,
-	nullptr,
+	webrtc::CreateBuiltinVideoEncoderFactory(),
+	webrtc::CreateBuiltinVideoDecoderFactory(),
 	nullptr,
 	SetupAudioProcessingModule()
 	);
 
 	// Create WebRTC Client Ref 
-	TSharedRef<CodeStoryWebRTCClient> WebRTCClientRef = MakeShared<CodeStoryWebRTCClient>(
-			CreateWebSocket(SignalingHost, CodeStoryWebSocket::EnumToString(SignalingProtocol)),
+	return CodeStoryWebRTCClient(
+		CreateWebSocket(SignalingHost, CodeStoryWebSocket::EnumToString(SignalingProtocol)),
 			PeerConnectionFactory,
 			VideoCallbackImpl
 	);
-	
-	return WebRTCClientRef;
 }
 
 WebSocketWrapper CodeStoryWebRTCFacade::CreateWebSocket(const FString& wsHost, const FString& wsProtocol)

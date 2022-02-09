@@ -9,4 +9,5 @@
 #include "C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/FAudioCapturer.cpp"
 #include "C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCInitializer.cpp"
 #include "C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCLogging.cpp"
+#include "C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCThread.cpp"
 #include "C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebSocketWrapper.cpp"

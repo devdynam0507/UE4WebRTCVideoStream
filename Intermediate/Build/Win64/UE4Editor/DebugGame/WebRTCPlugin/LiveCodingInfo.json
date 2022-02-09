@@ -12,6 +12,7 @@
 			"FAudioCapturer.cpp.obj",
 			"WebRTCInitializer.cpp.obj",
 			"WebRTCLogging.cpp.obj",
+			"WebRTCThread.cpp.obj",
 			"WebSocketWrapper.cpp.obj"
 		]
 	}

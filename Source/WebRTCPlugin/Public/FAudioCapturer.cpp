@@ -11,7 +11,7 @@ DEFINE_LOG_CATEGORY(LogAudioCapturer);
 	{                       \
 		if (!bInitialized)  \
 		{                   \
-			return -1;      \
+			return 0;      \
 		};                  \
 	}
 #define CHECKinitialized__BOOL() \
@@ -102,7 +102,7 @@ int32 FAudioCapturer::RegisterAudioCallback(webrtc::AudioTransport* audioCallbac
 int32 FAudioCapturer::Init()
 {
 	if (bInitialized)
-		return 1;
+		return 0;
 
 	{
 		FScopeLock Lock(&DeviceBufferCS);
@@ -114,14 +114,14 @@ int32 FAudioCapturer::Init()
 	// subscribe to audio data
 	if (!GEngine)
 	{
-		return 1;
+		return 0;
 	}
 
 	FAudioDeviceHandle AudioDevice = GEngine->GetMainAudioDevice();
 	if (!AudioDevice)
 	{
 		UE_LOG(LogAudioCapturer, Warning, TEXT("No audio device"));
-		return 1;
+		return 0;
 	}
 
 	bInitialized = true;
@@ -130,7 +130,7 @@ int32 FAudioCapturer::Init()
 
 	UE_LOG(LogAudioCapturer, Verbose, TEXT("Init"));
 
-	return 1;
+	return 0;
 }
 
 int32 FAudioCapturer::Terminate()
@@ -141,13 +141,13 @@ int32 FAudioCapturer::Terminate()
 	// unsubscribe from audio data
 	if (!GEngine)
 	{
-		return -1;
+		return 0;
 	}
 
 	FAudioDeviceHandle AudioDevice = GEngine->GetMainAudioDevice();
 	if (!AudioDevice)
 	{
-		return -1;
+		return 0;
 	}
 
 	AudioDevice->UnregisterSubmixBufferListener(this);
@@ -171,27 +171,27 @@ bool FAudioCapturer::Initialized() const
 int16 FAudioCapturer::PlayoutDevices()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int16 FAudioCapturer::RecordingDevices()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::PlayoutDeviceName(
     uint16 index, char name[webrtc::kAdmMaxDeviceNameSize], char guid[webrtc::kAdmMaxGuidSize])
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::RecordingDeviceName(
     uint16 index, char name[webrtc::kAdmMaxDeviceNameSize], char guid[webrtc::kAdmMaxGuidSize])
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::SetPlayoutDevice(uint16 index)
@@ -221,13 +221,13 @@ int32 FAudioCapturer::SetRecordingDevice(WindowsDeviceType device)
 int32 FAudioCapturer::PlayoutIsAvailable(bool* available)
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::InitPlayout()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 bool FAudioCapturer::PlayoutIsInitialized() const
@@ -239,7 +239,7 @@ bool FAudioCapturer::PlayoutIsInitialized() const
 int32 FAudioCapturer::RecordingIsAvailable(bool* available)
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::InitRecording()
@@ -267,13 +267,13 @@ bool FAudioCapturer::RecordingIsInitialized() const
 int32 FAudioCapturer::StartPlayout()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::StopPlayout()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 bool FAudioCapturer::Playing() const
@@ -285,13 +285,13 @@ bool FAudioCapturer::Playing() const
 int32 FAudioCapturer::StartRecording()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::StopRecording()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 bool FAudioCapturer::Recording() const
@@ -303,7 +303,7 @@ bool FAudioCapturer::Recording() const
 int32 FAudioCapturer::InitSpeaker()
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 bool FAudioCapturer::SpeakerIsInitialized() const
@@ -327,19 +327,19 @@ bool FAudioCapturer::MicrophoneIsInitialized() const
 int32 FAudioCapturer::StereoPlayoutIsAvailable(bool* available) const
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::SetStereoPlayout(bool enable)
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::StereoPlayout(bool* enabled) const
 {
 	CHECKinitialized_();
-	return -1;
+	return 0;
 }
 
 int32 FAudioCapturer::StereoRecordingIsAvailable(bool* available) const

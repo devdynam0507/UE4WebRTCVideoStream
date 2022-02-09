@@ -1,5 +1,8 @@
 ﻿#include "CodeStoryWebRTCClient.h"
 
+DECLARE_LOG_CATEGORY_EXTERN(CodeStoryWebRTCClientLog, Log, All);
+DEFINE_LOG_CATEGORY(CodeStoryWebRTCClientLog);
+
 // ============================================================================================ //
 //
 //							WebSocket Observer Implementations!
@@ -13,7 +16,7 @@ void CodeStoryWebRTCClient::OnConnect()
 
 void CodeStoryWebRTCClient::OnMessage(const FString& Message)
 {
-	
+	UE_LOG(LogTemp, Log, TEXT("Response Message %s"), *Message);
 }
 
 void CodeStoryWebRTCClient::OnConnectionError(const FString& Error)
@@ -53,6 +56,27 @@ void CodeStoryWebRTCClient::CreatePeerConnection()
 	);
 }
 
+void CodeStoryWebRTCClient::CreateOfferSdp()
+{
+	CodeStoryWebRTCThread::WORKER_THREAD->Invoke<void>(RTC_FROM_HERE, [this]()
+	{
+		int offer_to_receive_video = 1; // 1로 설정시 receive
+		int offer_to_receive_audio = 0; // 0으로 설정시 send only
+		bool voice_activity_detection = false;
+		bool ice_restart = true;
+		bool use_rtp_mux = true;
+		
+		PeerConnection->CreateOffer(this, webrtc::PeerConnectionInterface::RTCOfferAnswerOptions(
+			offer_to_receive_video,
+			offer_to_receive_audio,
+			voice_activity_detection,
+			ice_restart,
+			use_rtp_mux
+		));	
+	});
+}
+
+
 // ============================================================================================ //
 //
 //							Peer Connection Observer Implementations!
@@ -88,15 +112,34 @@ void CodeStoryWebRTCClient::OnIceCandidate(const webrtc::IceCandidateInterface* 
 	// TODO: Sending ice to remote
 }
 
+void CodeStoryWebRTCClient::ConnectSignalingServer()
+{
+	WebSocket.Connect();
+}
+
 void CodeStoryWebRTCClient::OnSuccess(webrtc::SessionDescriptionInterface* desc)
 {
-	PeerConnection->SetLocalDescription(CodeStoryPeerSetSessionDescriptionObserver::CreateObserver(), desc);
-
+	std::string sid = desc->session_id();
 	std::string OfferSdp;
 	desc->ToString(&OfferSdp);
-
+	CodeStoryPeerSetSessionDescriptionObserver* PeerSetObserver = CodeStoryPeerSetSessionDescriptionObserver::CreateObserver();
+	PeerConnection->SetLocalDescription(PeerSetObserver, desc);
+	
 	auto OfferSdpInstance = webrtc::CreateSessionDescription(webrtc::SdpType::kOffer, OfferSdp, nullptr);
+	
 	// TODO: Send Kurento Application Server
+	TSharedRef<FJsonObject> OfferJson = MakeShareable(new FJsonObject);
+	OfferJson->SetStringField("id", "viewer");
+	OfferJson->SetStringField("offerSdp", UTF8_TO_TCHAR(OfferSdp.c_str()));
+	
+	FString ToJsonString;
+	TSharedRef<TJsonWriter<>> JsonWriter = TJsonWriterFactory<>::Create(&ToJsonString);
+
+	if(FJsonSerializer::Serialize(OfferJson, JsonWriter))
+	{
+		UE_LOG(LogTemp, Log, TEXT("Send data: \r\n%s"), *ToJsonString);
+		WebSocket.GetSocket().Get()->Send(ToJsonString);	
+	}
 }
 
 void CodeStoryWebRTCClient::OnFailure(webrtc::RTCError error)

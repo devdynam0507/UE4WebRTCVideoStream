@@ -1,5 +1,21 @@
 ﻿#include "WebSocketWrapper.h"
 
+TSharedPtr<IWebSocket> WebSocketWrapper::GetSocket()
+{
+	return Socket;
+}
+
+void WebSocketWrapper::Send(TSharedRef<FJsonObject> JsonObject)
+{
+	FString ToJsonString;
+	TSharedRef<TJsonWriter<>> JsonWriter = TJsonWriterFactory<>::Create(&ToJsonString);
+	FJsonSerializer::Serialize(JsonObject, JsonWriter);
+
+	UE_LOG(LogTemp, Log, TEXT("Send data: \r\n%s"), *ToJsonString);
+
+	Socket.Get()->Send(ToJsonString);
+}
+
 void WebSocketWrapper::Subscribe(WebSocketObserver* Observer_)
 {
 	this->Observer = Observer_;
@@ -10,7 +26,7 @@ void WebSocketWrapper::Connect()
 	const FString ServerURL = wsHost; // Your server URL. You can use ws, wss or wss+insecure.
 	const FString ServerProtocol = wsProtocol;              // The WebServer protocol you want to use.
     
-	const TSharedPtr<IWebSocket> Socket = FWebSocketsModule::Get().CreateWebSocket(ServerURL, ServerProtocol);
+	Socket = FWebSocketsModule::Get().CreateWebSocket(ServerURL, ServerProtocol);
 
 	if(Observer != nullptr)
 	{

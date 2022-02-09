@@ -2,6 +2,7 @@
 #include "CodeStoryPeerConnectionObserver.h"
 #include "WebSocketWrapper.h"
 #include "CodeStoryVideoStreamReceiver.h"
+#include "WebRTCThread.h"
 
 class CodeStoryWebRTCClient : public WebSocketObserver, public webrtc::PeerConnectionObserver, public webrtc::CreateSessionDescriptionObserver
 {
@@ -41,8 +42,10 @@ public:
 
 	virtual void AddRef() const override;
 	virtual rtc::RefCountReleaseStatus Release() const override;
-	
+
+	void ConnectSignalingServer();
 	void CreatePeerConnection();
+	void CreateOfferSdp();
 
 private:
 	WebSocketWrapper WebSocket;

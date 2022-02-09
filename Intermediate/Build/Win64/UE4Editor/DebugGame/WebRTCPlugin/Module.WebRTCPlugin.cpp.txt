@@ -537,12 +537,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UOb
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebSocketWrapper.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Online\WebSockets\Public\WebSocketsModule.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Online\WebSockets\Public\IWebSocket.h
-C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
-C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\FAudioCapturer.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCThread.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
@@ -660,6 +655,12 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\Video
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryVideoStreamReceiver.cpp
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryWebRTCClient.cpp
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryWebRTCFacade.cpp
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\FAudioCapturer.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCLogging.h
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/FAudioCapturer.cpp
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/GameEngine.h
@@ -673,4 +674,5 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/Pr
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCLogging.cpp
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCThread.cpp
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebSocketWrapper.cpp

@@ -2,6 +2,8 @@
 #include "CodeStoryWebRTCClient.h"
 #include "WebSocketsModule.h" // Module definition
 #include "IWebSocket.h"       // Socket definition
+#include "Dom/JsonObject.h"
+#include "Serialization/JsonWriter.h"
 
 class WebSocketObserver
 {
@@ -27,8 +29,13 @@ public:
 	
 	void Connect();
 	void Subscribe(WebSocketObserver* Observer);
+
+	void Send(TSharedRef<FJsonObject> JsonObject);
+
+	TSharedPtr<IWebSocket> GetSocket();
 private:
 	FString wsHost;
 	FString wsProtocol;
 	WebSocketObserver* Observer;
+	TSharedPtr<IWebSocket> Socket;
 };
