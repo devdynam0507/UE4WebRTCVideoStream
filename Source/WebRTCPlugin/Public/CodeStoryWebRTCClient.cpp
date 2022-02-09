@@ -17,6 +17,16 @@ void CodeStoryWebRTCClient::OnConnect()
 void CodeStoryWebRTCClient::OnMessage(const FString& Message)
 {
 	UE_LOG(LogTemp, Log, TEXT("Response Message %s"), *Message);
+	
+	TSharedPtr<TJsonReader<>> JsonReader = TJsonReaderFactory<>::Create(Message);
+	TSharedPtr<FJsonObject> Response = MakeShareable(new FJsonObject());
+	FJsonSerializer::Deserialize(JsonReader.ToSharedRef(), Response);
+
+	FString ResponseId = Response.Get()->GetStringField("id"); // viewerResponse, presenterResponse
+	FString ResponseType = Response.Get()->GetStringField("response"); // rejected, accepted
+	FString ResponseMessage = Response.Get()->GetStringField("message"); // messages
+
+	// TODO: Signaling 응답 처리
 }
 
 void CodeStoryWebRTCClient::OnConnectionError(const FString& Error)
