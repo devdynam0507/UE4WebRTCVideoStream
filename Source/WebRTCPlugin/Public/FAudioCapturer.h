@@ -5,6 +5,10 @@ class FAudioCapturer
 	: public webrtc::AudioDeviceModule
 	, public ISubmixBufferListener
 {
+public:
+	virtual void AddRef() const override;
+	virtual rtc::RefCountReleaseStatus Release() const override;
+
 private:
 	// ISubmixBufferListener interface
 	void OnNewSubmixBuffer(const USoundSubmix* OwningSubmix, float* AudioData, int32 NumSamples, int32 NumChannels, const int32 SampleRate, double AudioClock) override;
@@ -167,6 +171,8 @@ private:
 	{
 		return -1;
 	}
+
+	
 
 	FThreadSafeBool bInitialized = false;
 	TArray<int16> PCM16;

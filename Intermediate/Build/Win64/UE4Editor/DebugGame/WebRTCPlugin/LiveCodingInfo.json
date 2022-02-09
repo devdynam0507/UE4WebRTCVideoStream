@@ -11,6 +11,7 @@
 			"CodeStoryWebRTCFacade.cpp.obj",
 			"FAudioCapturer.cpp.obj",
 			"WebRTCInitializer.cpp.obj",
+			"WebRTCLogging.cpp.obj",
 			"WebSocketWrapper.cpp.obj"
 		]
 	}

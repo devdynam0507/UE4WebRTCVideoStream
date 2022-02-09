@@ -1,11 +1,16 @@
 ﻿#include "CodeStoryWebRTCFacade.h"
 
+#include "FAudioCapturer.h"
+#include "WebRTCLogging.h"
+
 TSharedRef<CodeStoryWebRTCClient> CodeStoryWebRTCFacade::CreateClient(
 	const FString& SignalingHost,
 	CodeStoryWebSocket::ProtocolType SignalingProtocol,
 	TSharedRef<CodeStoryVideoStreamReceiver> VideoCallbackImpl
 )
 {
+	RedirectRTCLogToUE4(rtc::LS_VERBOSE);
+	
 	// Start WebRTC peer Thread
 	CodeStoryWebRTCThread::SIGNALING_THREAD->Start();
 	CodeStoryWebRTCThread::WORKER_THREAD->Start();
@@ -15,7 +20,7 @@ TSharedRef<CodeStoryWebRTCClient> CodeStoryWebRTCFacade::CreateClient(
 	nullptr,
 	CodeStoryWebRTCThread::WORKER_THREAD.get(),
 	CodeStoryWebRTCThread::SIGNALING_THREAD.get(),
-	nullptr,
+	rtc::scoped_refptr<FAudioCapturer>(new FAudioCapturer),
 	webrtc::CreateAudioEncoderFactory<webrtc::AudioEncoderOpus>(), 
 	webrtc::CreateAudioDecoderFactory<webrtc::AudioDecoderOpus>(),
 	nullptr,

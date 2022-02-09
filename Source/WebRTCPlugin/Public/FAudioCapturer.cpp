@@ -102,7 +102,7 @@ int32 FAudioCapturer::RegisterAudioCallback(webrtc::AudioTransport* audioCallbac
 int32 FAudioCapturer::Init()
 {
 	if (bInitialized)
-		return 0;
+		return 1;
 
 	{
 		FScopeLock Lock(&DeviceBufferCS);
@@ -114,22 +114,23 @@ int32 FAudioCapturer::Init()
 	// subscribe to audio data
 	if (!GEngine)
 	{
-		return -1;
+		return 1;
 	}
 
 	FAudioDeviceHandle AudioDevice = GEngine->GetMainAudioDevice();
 	if (!AudioDevice)
 	{
 		UE_LOG(LogAudioCapturer, Warning, TEXT("No audio device"));
-		return -1;
+		return 1;
 	}
 
+	bInitialized = true;
 	bInitialized = true;
 	AudioDevice->RegisterSubmixBufferListener(this);
 
 	UE_LOG(LogAudioCapturer, Verbose, TEXT("Init"));
 
-	return 0;
+	return 1;
 }
 
 int32 FAudioCapturer::Terminate()
@@ -360,3 +361,15 @@ int32 FAudioCapturer::StereoRecording(bool* enabled) const
 	*enabled = true;
 	return 0;
 }
+
+rtc::RefCountReleaseStatus FAudioCapturer::Release() const
+{
+	return rtc::RefCountReleaseStatus::kDroppedLastRef;	
+}
+
+void FAudioCapturer::AddRef() const
+{
+	
+}
+
+
