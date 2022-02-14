@@ -1,5 +1,6 @@
 ﻿#include "WebSocketWrapper.h"
 
+
 TSharedPtr<IWebSocket> WebSocketWrapper::GetSocket()
 {
 	return Socket;
@@ -7,55 +8,30 @@ TSharedPtr<IWebSocket> WebSocketWrapper::GetSocket()
 
 void WebSocketWrapper::Send(TSharedRef<FJsonObject> JsonObject)
 {
-	FString ToJsonString;
-	TSharedRef<TJsonWriter<>> JsonWriter = TJsonWriterFactory<>::Create(&ToJsonString);
-	FJsonSerializer::Serialize(JsonObject, JsonWriter);
+	if(Socket -> IsConnected())
+	{
+		FString ToJsonString;
+		TSharedRef<TJsonWriter<>> JsonWriter = TJsonWriterFactory<>::Create(&ToJsonString);
 
-	UE_LOG(LogTemp, Log, TEXT("Send data: \r\n%s"), *ToJsonString);
-
-	Socket.Get()->Send(ToJsonString);
+		if(FJsonSerializer::Serialize(JsonObject, JsonWriter))
+		{
+			UE_LOG(LogTemp, Log, TEXT("Send data: \r\n%s"), *ToJsonString);
+			Socket.Get()->Send(ToJsonString);	
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Socket is not connected!"))
+	}
 }
 
-void WebSocketWrapper::Subscribe(WebSocketObserver* Observer_)
-{
-	this->Observer = Observer_;
-}
-
-void WebSocketWrapper::Connect()
+TSharedPtr<IWebSocket> WebSocketWrapper::CreateSocket()
 {
 	const FString ServerURL = wsHost; // Your server URL. You can use ws, wss or wss+insecure.
 	const FString ServerProtocol = wsProtocol;              // The WebServer protocol you want to use.
     
 	Socket = FWebSocketsModule::Get().CreateWebSocket(ServerURL, ServerProtocol);
+	UE_LOG(LogTemp, Log, TEXT("WebSocket Connect TargetUrl %s %s"), *ServerURL, *ServerProtocol);
 
-	if(Observer != nullptr)
-	{
-		WebSocketObserver* O = Observer;
-		Socket->OnConnected().AddLambda([=]() -> void
-		{
-			O->OnConnect();
-		});
-		Socket->OnConnectionError().AddLambda([=](const FString& Error) -> void
-		{
-			O->OnConnectionError(Error);
-		});
-		Socket->OnClosed().AddLambda([=](int32 StatusCode, const FString& Reason, bool bWasClean) -> void
-		{
-			O->OnClose(StatusCode, Reason, bWasClean);
-		});
-		Socket->OnMessage().AddLambda([=](const FString& Message) -> void
-		{
-			O->OnMessage(Message);
-		});
-		Socket->OnMessageSent().AddLambda([=](const FString& Message) -> void
-		{
-			O->OnMessageSent(Message);
-		});
-		Socket->OnRawMessage().AddLambda([=](const void* Data, SIZE_T Size, SIZE_T ByteRemaining) -> void
-		{
-			O->OnRawMessage(Data, Size, ByteRemaining);
-		});
-	}
-
-	Socket->Connect();
+	return Socket;
 }

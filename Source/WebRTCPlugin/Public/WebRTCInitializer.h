@@ -34,6 +34,8 @@ THIRD_PARTY_INCLUDES_START
 #include "api/audio_codecs/opus/audio_encoder_opus.h"
 #include "api/audio_codecs/builtin_audio_encoder_factory.h"
 #include "api/video_codecs/video_decoder.h"
+#include "api/video_codecs/video_encoder_factory.h"
+#include "api/video_codecs/video_decoder_factory.h"
 #include "api/video_codecs/sdp_video_format.h"
 #include "api/video/video_frame.h"
 #include "api/video/video_rotation.h"

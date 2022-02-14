@@ -3,13 +3,13 @@
 #include "WebRTCInitializer.h"
 #include "VideoDecoder.h"
 
-class CodeStoryVideoDecoderCallback : public webrtc::DecodedImageCallback
+class WEBRTCPLUGIN_API CodeStoryVideoDecoderCallback : public webrtc::DecodedImageCallback
 {
 public:
 	virtual int32_t Decoded(webrtc::VideoFrame& decodedImage);
 };
 
-class CodeStoryVideoDecoder : public webrtc::VideoDecoder
+class WEBRTCPLUGIN_API CodeStoryVideoDecoder : public webrtc::VideoDecoder
 {
 public:
 	virtual int32_t InitDecode(const webrtc::VideoCodec* codec_settings,

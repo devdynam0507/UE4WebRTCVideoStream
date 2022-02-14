@@ -7,7 +7,7 @@
 #include "CodeStoryWebRTCFacade.h"
 #include "CodeStoryWebRTCClient.h"
 
-class FWebRTCPluginModule : public IModuleInterface
+class WEBRTCPLUGIN_API FWebRTCPluginModule : public IModuleInterface
 {
 public:
 

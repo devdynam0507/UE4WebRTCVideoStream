@@ -1,11 +1,10 @@
 ﻿#include "CodeStoryWebRTCFacade.h"
 
 #include "FAudioCapturer.h"
+#include "VideoCodecFactory.h"
 #include "WebRTCLogging.h"
 
 CodeStoryWebRTCClient CodeStoryWebRTCFacade::CreateClient(
-	const FString& SignalingHost,
-	CodeStoryWebSocket::ProtocolType SignalingProtocol,
 	TSharedRef<CodeStoryVideoStreamReceiver> VideoCallbackImpl
 )
 {
@@ -24,25 +23,28 @@ CodeStoryWebRTCClient CodeStoryWebRTCFacade::CreateClient(
 	rtc::scoped_refptr<FAudioCapturer>(new FAudioCapturer),
 	webrtc::CreateAudioEncoderFactory<webrtc::AudioEncoderOpus>(), 
 	webrtc::CreateAudioDecoderFactory<webrtc::AudioDecoderOpus>(),
-	webrtc::CreateBuiltinVideoEncoderFactory(),
-	webrtc::CreateBuiltinVideoDecoderFactory(),
+	CreateVideoEncoderFactory(),
+	CreateVideoDecoderFactory(),
 	nullptr,
 	SetupAudioProcessingModule()
 	);
 
+	webrtc::PeerConnectionFactoryInterface::Options option;
+	option.disable_encryption = true;
+	PeerConnectionFactory->SetOptions(option);
+	
 	// Create WebRTC Client Ref 
 	return CodeStoryWebRTCClient(
-		CreateWebSocket(SignalingHost, CodeStoryWebSocket::EnumToString(SignalingProtocol)),
 			PeerConnectionFactory,
 			VideoCallbackImpl
 	);
 }
 
-WebSocketWrapper CodeStoryWebRTCFacade::CreateWebSocket(const FString& wsHost, const FString& wsProtocol)
+WebSocketWrapper* CodeStoryWebRTCFacade::CreateWebSocket(const FString& wsHost, const FString& wsProtocol)
 {
 	WebSocketWrapper WSWrapper(wsHost, wsProtocol);
 
-	return WSWrapper;
+	return new WebSocketWrapper(wsHost, wsProtocol);
 }
 
 
@@ -71,4 +73,9 @@ webrtc::AudioProcessing* CodeStoryWebRTCFacade::SetupAudioProcessingModule()
 	AudioProcessingModule->ApplyConfig(Config);
 
 	return AudioProcessingModule;
+}
+
+CodeStoryWebRTCBridge CodeStoryWebRTCFacade::CreateWebRTC(CodeStoryWebRTCClient& Client, WebSocketWrapper& Socket)
+{
+	return CodeStoryWebRTCBridge(Client, Socket);
 }

@@ -14,7 +14,7 @@ void CodeStoryPeerSetSessionDescriptionObserver::OnSuccess()
 
 void CodeStoryPeerSetSessionDescriptionObserver::OnFailure(webrtc::RTCError error)
 {
-	UE_LOG(LogTemp, Log, TEXT("Failure set local description"))
+	UE_LOG(LogTemp, Log, TEXT("Failure set local description %s"), UTF8_TO_TCHAR(error.message()));
 }
 
 // ========================================================================================================================= //

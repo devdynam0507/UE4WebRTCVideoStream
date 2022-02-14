@@ -2,6 +2,7 @@ C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Inte
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Private/WebRTCPlugin.cpp
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCPlugin.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryWebRTCFacade.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryWebRTCBridge.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryWebRTCClient.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryPeerConnectionObserver.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\CodeStoryVideoStreamReceiver.h
@@ -653,7 +654,15 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/Hi
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoDecoderInput.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AVEncoder\Public\VideoDecoderAllocationTypes.h
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryVideoStreamReceiver.cpp
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryWebRTCBridge.cpp
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryWebRTCClient.cpp
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\VideoCodecFactory.h
+C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\media/engine/encoder_simulcast_proxy.h
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/CodeStoryWebRTCFacade.cpp
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\FAudioCapturer.h
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
@@ -667,6 +676,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/SViewport.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
+C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/VideoCodecFactory.cpp
 C:/Users/jns81/Documents/Unreal Projects/WebRTCProject/Plugins/WebRTCPlugin/Source/WebRTCPlugin/Public/WebRTCInitializer.cpp
 C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCInitializer.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h

@@ -1,11 +1,10 @@
 ﻿#pragma once
-#include "CodeStoryWebRTCClient.h"
 #include "WebSocketsModule.h" // Module definition
 #include "IWebSocket.h"       // Socket definition
 #include "Dom/JsonObject.h"
 #include "Serialization/JsonWriter.h"
 
-class WebSocketObserver
+class WEBRTCPLUGIN_API WebSocketObserver
 {
 public:
 	virtual void OnConnect() = 0;
@@ -16,26 +15,18 @@ public:
 	virtual void OnMessageSent(const FString& MessageString) = 0;
 };
 
-class WebSocketWrapper
+class WEBRTCPLUGIN_API WebSocketWrapper
 {
 public:
-	WebSocketWrapper(const FString& wsHost, const FString& wsProtocol, WebSocketObserver* Observer)
-		: wsHost(wsHost), wsProtocol(wsProtocol), Observer(Observer)
-	{}
-	
 	WebSocketWrapper(const FString& wsHost, const FString& wsProtocol)
-		: wsHost(wsHost), wsProtocol(wsProtocol), Observer(nullptr)
+		: wsHost(wsHost), wsProtocol(wsProtocol)
 	{}
 	
-	void Connect();
-	void Subscribe(WebSocketObserver* Observer);
-
+	TSharedPtr<IWebSocket> CreateSocket();
 	void Send(TSharedRef<FJsonObject> JsonObject);
-
 	TSharedPtr<IWebSocket> GetSocket();
 private:
 	FString wsHost;
 	FString wsProtocol;
-	WebSocketObserver* Observer;
 	TSharedPtr<IWebSocket> Socket;
 };

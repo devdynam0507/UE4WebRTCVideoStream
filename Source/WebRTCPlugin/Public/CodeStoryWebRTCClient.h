@@ -2,23 +2,21 @@
 #include "CodeStoryPeerConnectionObserver.h"
 #include "WebSocketWrapper.h"
 #include "CodeStoryVideoStreamReceiver.h"
+#include "CodeStoryWebRTCBridge.h"
 #include "WebRTCThread.h"
 
-class CodeStoryWebRTCClient : public WebSocketObserver, public webrtc::PeerConnectionObserver, public webrtc::CreateSessionDescriptionObserver
+class CodeStoryWebRTCBridge;
+
+class WEBRTCPLUGIN_API CodeStoryWebRTCClient : public WebSocketObserver, public webrtc::PeerConnectionObserver, public webrtc::CreateSessionDescriptionObserver
 {
 public:
 	CodeStoryWebRTCClient(
-		WebSocketWrapper Wrapper,
 		rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface> &PeerConnectionFactory,
 		TSharedRef<CodeStoryVideoStreamReceiver> &VideoReceiver)
 		: PeerConnectionFactory(PeerConnectionFactory),
-	      VideoReceiver(VideoReceiver),
-	      WebSocket(Wrapper)
-	{
-		Wrapper.Subscribe(this);
-	}
+	      VideoReceiver(VideoReceiver)
+	{}
 
-public:
 	virtual void OnConnect() override;
 	virtual void OnConnectionError(const FString& Error) override;
 	virtual void OnClose(int32 StatusCode, const FString& Reason, bool bWasClean) override;
@@ -43,13 +41,20 @@ public:
 	virtual void AddRef() const override;
 	virtual rtc::RefCountReleaseStatus Release() const override;
 
-	void ConnectSignalingServer();
 	void CreatePeerConnection();
 	void CreateOfferSdp();
+	void SetAnswerSdp(const FString& AnswerSdp);
+	void SetLocalDescription(webrtc::SessionDescriptionInterface* desc);
+	void SetWebRTCBridge(TSharedPtr<CodeStoryWebRTCBridge, ESPMode::ThreadSafe> Bridge);
+
+	// Proxy 서버로부터 온 iceCandidate 데이터를 추가합니다.
+	void AddIceCandidateFromProxyServer(FString iceCandidate);
+	
+	rtc::scoped_refptr<webrtc::PeerConnectionInterface> GetPeerConnection();
 
 private:
-	WebSocketWrapper WebSocket;
 	rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface> PeerConnectionFactory;
 	TSharedRef<CodeStoryVideoStreamReceiver> VideoReceiver;
 	rtc::scoped_refptr<webrtc::PeerConnectionInterface> PeerConnection = nullptr;
+	TSharedPtr<CodeStoryWebRTCBridge, ESPMode::ThreadSafe> Bridge;
 };

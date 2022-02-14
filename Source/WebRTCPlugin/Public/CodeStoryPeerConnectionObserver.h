@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "CodeStoryVideoStreamReceiver.h"
 
-class CodeStoryPeerSetSessionDescriptionObserver : public webrtc::SetSessionDescriptionObserver
+class WEBRTCPLUGIN_API CodeStoryPeerSetSessionDescriptionObserver : public webrtc::SetSessionDescriptionObserver
 {
 public:
 	static CodeStoryPeerSetSessionDescriptionObserver* CreateObserver();
@@ -10,7 +10,7 @@ public:
 	virtual void OnFailure(webrtc::RTCError error) override;
 };
 
-class CodeStoryPeerConnectionObserver : public webrtc::PeerConnectionObserver, public webrtc::CreateSessionDescriptionObserver
+class WEBRTCPLUGIN_API CodeStoryPeerConnectionObserver : public webrtc::PeerConnectionObserver, public webrtc::CreateSessionDescriptionObserver
 {
 public:
 	CodeStoryPeerConnectionObserver();

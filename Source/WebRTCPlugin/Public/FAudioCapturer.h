@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "WebRTCInitializer.h"
 
-class FAudioCapturer
+class WEBRTCPLUGIN_API FAudioCapturer
 	: public webrtc::AudioDeviceModule
 	, public ISubmixBufferListener
 {

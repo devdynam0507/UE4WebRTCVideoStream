@@ -2,7 +2,7 @@
 #include "WebRTCInitializer.h"
 #include "AudioMixerDevice.h"
 
-class FSubmixCapturer : public ISubmixBufferListener
+class WEBRTCPLUGIN_API FSubmixCapturer : public ISubmixBufferListener
 {
 public:
 	static const uint32_t MaxVolumeLevel = 14392;
@@ -48,7 +48,7 @@ private:
 
 };
 
-class FAudioPlayoutRequester
+class WEBRTCPLUGIN_API FAudioPlayoutRequester
 {
 public:
 	class Runnable : public FRunnable
@@ -104,7 +104,7 @@ private:
 	TArray<int16_t> PlayoutBuffer;
 };
 
-class CodeStoryAudioDeviceModule : public webrtc::AudioDeviceModule
+class WEBRTCPLUGIN_API CodeStoryAudioDeviceModule : public webrtc::AudioDeviceModule
 {
 public:
 	CodeStoryAudioDeviceModule()

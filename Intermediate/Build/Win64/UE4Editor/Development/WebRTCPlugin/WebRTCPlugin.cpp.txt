@@ -1,2 +1,0 @@
-C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Intermediate\Build\Win64\UE4Editor\Development\WebRTCPlugin\Definitions.WebRTCPlugin.h
-C:\Users\jns81\Documents\Unreal Projects\WebRTCProject\Plugins\WebRTCPlugin\Source\WebRTCPlugin\Public\WebRTCPlugin.h
