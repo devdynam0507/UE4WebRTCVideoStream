@@ -49,8 +49,8 @@
 #define NDEBUG 1
 #define UE_BUILD_DEVELOPMENT 1
 #define UE_IS_ENGINE_MODULE 0
-#define UE_PROJECT_NAME WebRTCProject
-#define UE_TARGET_NAME WebRTCProjectEditor
+#define UE_PROJECT_NAME WebRTCProj
+#define UE_TARGET_NAME WebRTCProjEditor
 #define UE_MODULE_NAME "WebRTCPlugin"
 #define UE_PLUGIN_NAME "WebRTCPlugin"
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 

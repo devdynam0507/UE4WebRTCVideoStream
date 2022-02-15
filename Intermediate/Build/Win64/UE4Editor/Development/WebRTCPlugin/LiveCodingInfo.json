@@ -1,0 +1,21 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.WebRTCPlugin.cpp.obj": [
+			"WebRTCPlugin.cpp.obj",
+			"CodeStoryAudioDeviceModule.cpp.obj",
+			"CodeStoryPeerConnectionObserver.cpp.obj",
+			"CodeStoryVideoDecoder.cpp.obj",
+			"CodeStoryVideoStreamReceiver.cpp.obj",
+			"CodeStoryWebRTCBridge.cpp.obj",
+			"CodeStoryWebRTCClient.cpp.obj",
+			"CodeStoryWebRTCFacade.cpp.obj",
+			"FAudioCapturer.cpp.obj",
+			"VideoCodecFactory.cpp.obj",
+			"WebRTCInitializer.cpp.obj",
+			"WebRTCLogging.cpp.obj",
+			"WebRTCThread.cpp.obj",
+			"WebSocketWrapper.cpp.obj"
+		]
+	}
+}

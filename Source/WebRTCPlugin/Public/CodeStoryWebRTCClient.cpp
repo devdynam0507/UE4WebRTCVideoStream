@@ -13,7 +13,7 @@ DEFINE_LOG_CATEGORY(CodeStoryWebRTCClientLog);
 void CodeStoryWebRTCClient::OnConnect()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Connected WebRTC Proxy Server"));
-	this->CreateOfferSdp();
+	CreateOfferSdp();
 }
 
 /*
@@ -44,13 +44,34 @@ void CodeStoryWebRTCClient::OnMessage(const FString& Message)
 
 	if(ResponseId.Equals("iceCandidate"))
 	{
-		webrtc::IceCandidateInterface *Candidate = webrtc::CreateIceCandidate(
-		std::string(TCHAR_TO_UTF8(*Response.Get()->GetStringField("sdpMid"))),
-	 Response.Get()->GetIntegerField("sdpMLineIndex"),
-			 std::string(TCHAR_TO_UTF8(*Response.Get()->GetStringField("candidate")))
-		 nullptr
-		 );
+		FString	SdpMid = Response.Get()->GetStringField("sdpMid");
+		FString CandidateString = Response.Get()->GetStringField("candidate");
+		FString SdpMLineIndex = Response.Get()->GetStringField("sdpMLineIndex");
+		webrtc::SdpParseError _SdpParseError;
+
+		std::string ParsedSdpMid = TCHAR_TO_UTF8(*SdpMid);
+		std::string ParsedCandidate = TCHAR_TO_UTF8(*CandidateString);
+		int32 ParsedMLineIndex = FCString::Atoi(*SdpMLineIndex);
+		UE_LOG(LogTemp, Log, TEXT("sdpMLineIndex %d"), ParsedMLineIndex);
 		
+		webrtc::IceCandidateInterface *Candidate = webrtc::CreateIceCandidate(
+		   ParsedSdpMid,
+	       ParsedMLineIndex,
+	       ParsedCandidate,
+		 &_SdpParseError
+		 );
+
+		const cricket::Candidate& candidate = Candidate->candidate();
+		std::string id = candidate.id();
+		std::string dd = candidate.foundation();
+		std::string cc = candidate.network_name();
+		std::string ne = candidate.network_name();
+		std::string tt = candidate.tcptype();
+		std::string ttt = candidate.transport_name();
+		std::string af = candidate.ToString();
+		const std::string spdmid = Candidate->sdp_mid();
+		const int ind = Candidate->sdp_mline_index();
+		const std::string url = Candidate->server_url();
 		PeerConnection.get()->AddIceCandidate(Candidate);
 		return;
 	}
@@ -170,10 +191,6 @@ void CodeStoryWebRTCClient::CreateOfferSdp()
 		TInit.direction = webrtc::RtpTransceiverDirection::kRecvOnly;
 		PeerConnection.get()->AddTransceiver(cricket::MEDIA_TYPE_VIDEO,TInit);
 		PeerConnection.get()->AddTransceiver(cricket::MEDIA_TYPE_AUDIO, TInit);
-		auto VideoSource = new rtc::RefCountedObject<VideoTrack>;
-		auto VideoTrack = PeerConnectionFactory.get()->CreateVideoTrack("video", VideoSource);
-		PeerConnection.get()->AddTransceiver(VideoTrack);
-		
 		
 		PeerConnection.get()->CreateOffer(this, webrtc::PeerConnectionInterface::RTCOfferAnswerOptions(
 			offer_to_receive_video,
@@ -231,7 +248,7 @@ void CodeStoryWebRTCClient::OnAddTrack(
 	if(Track->kind() == "video")
 	{
 		const auto CastedTrack = static_cast<webrtc::VideoTrackInterface*>(Track);
-
+		
 		CastedTrack->AddOrUpdateSink(&VideoReceiver.Get(), rtc::VideoSinkWants());
 	}
 	
@@ -253,11 +270,9 @@ void CodeStoryWebRTCClient::OnIceCandidate(const webrtc::IceCandidateInterface* 
 void CodeStoryWebRTCClient::OnSuccess(webrtc::SessionDescriptionInterface* desc)
 {
 	std::string OfferSdp;
-	desc->ToString(&OfferSdp);
 	
+	desc->ToString(&OfferSdp);
 	SetLocalDescription(desc);
-//Thread 문제인듯
-
 	Bridge.Get()->OnSuccessCreatedOffer(OfferSdp);
 }
 
@@ -289,6 +304,10 @@ void CodeStoryWebRTCClient::OnDataChannel(rtc::scoped_refptr<webrtc::DataChannel
 void CodeStoryWebRTCClient::OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state)
 {
 	UE_LOG(LogTemp, Log, TEXT("OnIceGatheringChange()"));
+
+	if(webrtc::PeerConnectionInterface::IceGatheringState::kIceGatheringComplete == new_state)
+	{
+	}
 }
 
 void CodeStoryWebRTCClient::AddRef() const
