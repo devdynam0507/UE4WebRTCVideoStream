@@ -21,8 +21,8 @@ CodeStoryWebRTCClient CodeStoryWebRTCFacade::CreateClient(
 	CodeStoryWebRTCThread::WORKER_THREAD.get(),
 	CodeStoryWebRTCThread::SIGNALING_THREAD.get(),
 	rtc::scoped_refptr<FAudioCapturer>(new FAudioCapturer),
-	webrtc::CreateAudioEncoderFactory<webrtc::AudioEncoderOpus>(), 
-	webrtc::CreateAudioDecoderFactory<webrtc::AudioDecoderOpus>(),
+	webrtc::CreateBuiltinAudioEncoderFactory(), 
+	webrtc::CreateBuiltinAudioDecoderFactory(),
 	CreateVideoEncoderFactory(),
 	CreateVideoDecoderFactory(),
 	nullptr,
@@ -30,7 +30,7 @@ CodeStoryWebRTCClient CodeStoryWebRTCFacade::CreateClient(
 	);
 
 	webrtc::PeerConnectionFactoryInterface::Options option;
-	option.disable_encryption = true;
+	option.disable_encryption = false;
 	PeerConnectionFactory->SetOptions(option);
 	
 	// Create WebRTC Client Ref 

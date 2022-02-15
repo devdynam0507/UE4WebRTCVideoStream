@@ -16,6 +16,21 @@ void CodeStoryWebRTCClient::OnConnect()
 	this->CreateOfferSdp();
 }
 
+/*
+	"" TSharedPtr ""
+
+const TSharedRef<CodeStoryVideoStreamReceiver> VideoCallbackImpl = MakeShared<CodeStoryVideoStreamReceiver>();
+	WebSocketWrapper = MakeShareable(
+		CodeStoryWebRTCFacade::CreateWebSocket(TEXT("ws://45.32.249.81:7777/"), CodeStoryWebSocket::EnumToString(CodeStoryWebSocket::WS))
+	);
+	WebRTCClient = MakeShared<CodeStoryWebRTCClient, ESPMode::ThreadSafe>(CodeStoryWebRTCFacade::CreateClient(VideoCallbackImpl));
+	Bridge = MakeShared<CodeStoryWebRTCBridge, ESPMode::ThreadSafe>(CodeStoryWebRTCFacade::CreateWebRTC(*WebRTCClient.Get(), *WebSocketWrapper.Get()));
+	
+	WebRTCClient->SetWebRTCBridge(Bridge);
+	Bridge.Get()->CreatePeerConnection();
+	Bridge.Get()->ConnectToSignalingProxyServer();
+*/
+
 void CodeStoryWebRTCClient::OnMessage(const FString& Message)
 {
 	UE_LOG(LogTemp, Log, TEXT("Response Message %s"), *Message);
@@ -29,7 +44,14 @@ void CodeStoryWebRTCClient::OnMessage(const FString& Message)
 
 	if(ResponseId.Equals("iceCandidate"))
 	{
-		Response->GetObjectField("candidate");
+		webrtc::IceCandidateInterface *Candidate = webrtc::CreateIceCandidate(
+		std::string(TCHAR_TO_UTF8(*Response.Get()->GetStringField("sdpMid"))),
+	 Response.Get()->GetIntegerField("sdpMLineIndex"),
+			 std::string(TCHAR_TO_UTF8(*Response.Get()->GetStringField("candidate")))
+		 nullptr
+		 );
+		
+		PeerConnection.get()->AddIceCandidate(Candidate);
 		return;
 	}
 	
@@ -82,9 +104,7 @@ void CodeStoryWebRTCClient::CreatePeerConnection()
 {
 	webrtc::PeerConnectionInterface::RTCConfiguration Config;
 	Config.sdp_semantics = webrtc::SdpSemantics::kUnifiedPlan;
-	//Config.enable_dtls_srtp = true;
 	Config.enable_dtls_srtp = true;
-	Config.enable_rtp_data_channel = true;
 
 	webrtc::PeerConnectionInterface::IceServer GoogleStun;
 	GoogleStun.uri = "stun:stun.l.google.com:19302";
@@ -103,6 +123,39 @@ rtc::scoped_refptr<webrtc::PeerConnectionInterface> CodeStoryWebRTCClient::GetPe
 	return PeerConnection;
 }
 
+class VideoSourceMock : public rtc::VideoSourceInterface<webrtc::VideoFrame>
+{
+public:
+	VideoSourceMock() {}
+
+private:
+	void AddOrUpdateSink(rtc::VideoSinkInterface<webrtc::VideoFrame>* sink, const rtc::VideoSinkWants& wants)
+	{
+		
+	}
+
+	void RemoveSink(rtc::VideoSinkInterface<webrtc::VideoFrame>* sink)
+	{
+		
+	}
+};
+
+class VideoTrack : public webrtc::VideoTrackSource
+{
+public:
+	VideoTrack() : webrtc::VideoTrackSource(false) 
+	{
+		mysource = std::make_unique<VideoSourceMock>();
+	}
+protected:
+	rtc::VideoSourceInterface<webrtc::VideoFrame>* source() override
+	{
+		return mysource.get();
+	}
+private:
+	std::unique_ptr<VideoSourceMock> mysource;	
+};
+
 void CodeStoryWebRTCClient::CreateOfferSdp()
 {
 	CodeStoryWebRTCThread::WORKER_THREAD->Invoke<void>(RTC_FROM_HERE, [this]()
@@ -117,6 +170,10 @@ void CodeStoryWebRTCClient::CreateOfferSdp()
 		TInit.direction = webrtc::RtpTransceiverDirection::kRecvOnly;
 		PeerConnection.get()->AddTransceiver(cricket::MEDIA_TYPE_VIDEO,TInit);
 		PeerConnection.get()->AddTransceiver(cricket::MEDIA_TYPE_AUDIO, TInit);
+		auto VideoSource = new rtc::RefCountedObject<VideoTrack>;
+		auto VideoTrack = PeerConnectionFactory.get()->CreateVideoTrack("video", VideoSource);
+		PeerConnection.get()->AddTransceiver(VideoTrack);
+		
 		
 		PeerConnection.get()->CreateOffer(this, webrtc::PeerConnectionInterface::RTCOfferAnswerOptions(
 			offer_to_receive_video,
