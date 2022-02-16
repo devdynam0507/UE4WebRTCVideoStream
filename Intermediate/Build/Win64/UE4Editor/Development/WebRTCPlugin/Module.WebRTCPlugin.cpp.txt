@@ -678,6 +678,10 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/S
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime/MovieSceneCapture/Public/MovieSceneCaptureHandle.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameEngine.generated.h
 C:/Unreal Projects/WebRTCProj/Plugins/UE4WebRTCVideoStream/Source/WebRTCPlugin/Public/VideoCodecFactory.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/codecs/vp8/include/vp8.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/vp8_frame_buffer_controller.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\api/video_codecs/vp8_frame_config.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\ThirdParty\WebRTC\4147\Include\modules/video_coding/codecs/vp9/include/vp9.h
 C:/Unreal Projects/WebRTCProj/Plugins/UE4WebRTCVideoStream/Source/WebRTCPlugin/Public/WebRTCInitializer.cpp
 C:\Unreal Projects\WebRTCProj\Plugins\UE4WebRTCVideoStream\Source\WebRTCPlugin\Public\WebRTCInitializer.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h

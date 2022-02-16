@@ -1,4 +1,7 @@
 ﻿#include "VideoCodecFactory.h"
+#include "modules/video_coding/codecs/h264/include/h264.h"
+#include "modules/video_coding/codecs/vp8/include/vp8.h"
+#include "modules/video_coding/codecs/vp9/include/vp9.h"
 
 CodeStoryVideoEncoderFactory::~CodeStoryVideoEncoderFactory()
 {
@@ -61,7 +64,20 @@ std::vector<webrtc::SdpVideoFormat> CodeStoryVideoDecoderFactory::GetSupportedFo
 
 std::unique_ptr<webrtc::VideoDecoder> CodeStoryVideoDecoderFactory::CreateVideoDecoder(const webrtc::SdpVideoFormat& format)
 {
-	return webrtc::H264Decoder::Create();
+	if(format.name == "H264")
+	{
+		return webrtc::H264Decoder::Create();
+	}
+	if(format.name == "VP8")
+	{
+		return webrtc::VP8Decoder::Create();
+	}
+	if(format.name == "VP9")
+	{
+		return webrtc::VP9Decoder::Create();
+	}
+	
+	return nullptr;
 }
 
 std::unique_ptr<CodeStoryVideoDecoderFactory> CreateVideoDecoderFactory()

@@ -233,6 +233,7 @@ void CodeStoryWebRTCClient::OnAddTrack(
 	if(Track->kind() == "video")
 	{
 		VideoTrack = static_cast<webrtc::VideoTrackInterface*>(Track);
+		VideoTrack->GetSource()->AddOrUpdateSink(new CodeStoryVideoStreamReceiver, rtc::VideoSinkWants());
 		VideoTrack -> AddOrUpdateSink(new CodeStoryVideoStreamReceiver, rtc::VideoSinkWants());
 	}
 	
