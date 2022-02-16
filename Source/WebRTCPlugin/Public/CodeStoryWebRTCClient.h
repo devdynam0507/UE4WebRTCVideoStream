@@ -57,4 +57,5 @@ private:
 	TSharedRef<CodeStoryVideoStreamReceiver> VideoReceiver;
 	rtc::scoped_refptr<webrtc::PeerConnectionInterface> PeerConnection = nullptr;
 	TSharedPtr<CodeStoryWebRTCBridge, ESPMode::ThreadSafe> Bridge;
+	webrtc::VideoTrackInterface* VideoTrack;
 };

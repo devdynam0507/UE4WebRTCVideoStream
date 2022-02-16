@@ -16,21 +16,6 @@ void CodeStoryWebRTCClient::OnConnect()
 	CreateOfferSdp();
 }
 
-/*
-	"" TSharedPtr ""
-
-const TSharedRef<CodeStoryVideoStreamReceiver> VideoCallbackImpl = MakeShared<CodeStoryVideoStreamReceiver>();
-	WebSocketWrapper = MakeShareable(
-		CodeStoryWebRTCFacade::CreateWebSocket(TEXT("ws://45.32.249.81:7777/"), CodeStoryWebSocket::EnumToString(CodeStoryWebSocket::WS))
-	);
-	WebRTCClient = MakeShared<CodeStoryWebRTCClient, ESPMode::ThreadSafe>(CodeStoryWebRTCFacade::CreateClient(VideoCallbackImpl));
-	Bridge = MakeShared<CodeStoryWebRTCBridge, ESPMode::ThreadSafe>(CodeStoryWebRTCFacade::CreateWebRTC(*WebRTCClient.Get(), *WebSocketWrapper.Get()));
-	
-	WebRTCClient->SetWebRTCBridge(Bridge);
-	Bridge.Get()->CreatePeerConnection();
-	Bridge.Get()->ConnectToSignalingProxyServer();
-*/
-
 void CodeStoryWebRTCClient::OnMessage(const FString& Message)
 {
 	UE_LOG(LogTemp, Log, TEXT("Response Message %s"), *Message);
@@ -181,8 +166,8 @@ void CodeStoryWebRTCClient::CreateOfferSdp()
 {
 	CodeStoryWebRTCThread::WORKER_THREAD->Invoke<void>(RTC_FROM_HERE, [this]()
 	{
-		int offer_to_receive_video = 1; // 1로 설정시 receive
-		int offer_to_receive_audio = 1; // 0으로 설정시 send only
+		int offer_to_receive_video = webrtc::PeerConnectionInterface::RTCOfferAnswerOptions::kOfferToReceiveMediaTrue; // 1로 설정시 receive
+		int offer_to_receive_audio = webrtc::PeerConnectionInterface::RTCOfferAnswerOptions::kOfferToReceiveMediaTrue; // 0으로 설정시 send only
 		bool voice_activity_detection = false;
 		bool ice_restart = true;
 		bool use_rtp_mux = true;
@@ -190,6 +175,7 @@ void CodeStoryWebRTCClient::CreateOfferSdp()
 		webrtc::RtpTransceiverInit TInit;
 		TInit.direction = webrtc::RtpTransceiverDirection::kRecvOnly;
 		PeerConnection.get()->AddTransceiver(cricket::MEDIA_TYPE_VIDEO,TInit);
+		PeerConnection.get()->GetTransceivers()[0].get()->receiver().get()->SetObserver(new CodeStoryRtcReceiverObserver);
 		PeerConnection.get()->AddTransceiver(cricket::MEDIA_TYPE_AUDIO, TInit);
 		
 		PeerConnection.get()->CreateOffer(this, webrtc::PeerConnectionInterface::RTCOfferAnswerOptions(
@@ -234,7 +220,6 @@ void CodeStoryWebRTCClient::SetWebRTCBridge(TSharedPtr<CodeStoryWebRTCBridge, ES
 void CodeStoryWebRTCClient::OnAddStream(rtc::scoped_refptr<webrtc::MediaStreamInterface> stream)
 {
 	UE_LOG(LogTemp, Log, TEXT("On Add Stream id : %d"))
-
 	Bridge->OnAddStream(stream);
 }
 
@@ -244,12 +229,11 @@ void CodeStoryWebRTCClient::OnAddTrack(
 )
 {
 	const auto Track = receiver->track().get();
-
+	
 	if(Track->kind() == "video")
 	{
-		const auto CastedTrack = static_cast<webrtc::VideoTrackInterface*>(Track);
-		
-		CastedTrack->AddOrUpdateSink(&VideoReceiver.Get(), rtc::VideoSinkWants());
+		VideoTrack = static_cast<webrtc::VideoTrackInterface*>(Track);
+		VideoTrack -> AddOrUpdateSink(new CodeStoryVideoStreamReceiver, rtc::VideoSinkWants());
 	}
 	
 	Bridge->OnAddTrack(receiver, streams);
