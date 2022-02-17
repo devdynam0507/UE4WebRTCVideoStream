@@ -129,39 +129,6 @@ rtc::scoped_refptr<webrtc::PeerConnectionInterface> CodeStoryWebRTCClient::GetPe
 	return PeerConnection;
 }
 
-class VideoSourceMock : public rtc::VideoSourceInterface<webrtc::VideoFrame>
-{
-public:
-	VideoSourceMock() {}
-
-private:
-	void AddOrUpdateSink(rtc::VideoSinkInterface<webrtc::VideoFrame>* sink, const rtc::VideoSinkWants& wants)
-	{
-		
-	}
-
-	void RemoveSink(rtc::VideoSinkInterface<webrtc::VideoFrame>* sink)
-	{
-		
-	}
-};
-
-class VideoTrack : public webrtc::VideoTrackSource
-{
-public:
-	VideoTrack() : webrtc::VideoTrackSource(false) 
-	{
-		mysource = std::make_unique<VideoSourceMock>();
-	}
-protected:
-	rtc::VideoSourceInterface<webrtc::VideoFrame>* source() override
-	{
-		return mysource.get();
-	}
-private:
-	std::unique_ptr<VideoSourceMock> mysource;	
-};
-
 void CodeStoryWebRTCClient::CreateOfferSdp()
 {
 	CodeStoryWebRTCThread::WORKER_THREAD->Invoke<void>(RTC_FROM_HERE, [this]()
@@ -233,8 +200,8 @@ void CodeStoryWebRTCClient::OnAddTrack(
 	if(Track->kind() == "video")
 	{
 		VideoTrack = static_cast<webrtc::VideoTrackInterface*>(Track);
-		VideoTrack->GetSource()->AddOrUpdateSink(new CodeStoryVideoStreamReceiver, rtc::VideoSinkWants());
-		VideoTrack -> AddOrUpdateSink(new CodeStoryVideoStreamReceiver, rtc::VideoSinkWants());
+//		VideoTrack->GetSource()->AddOrUpdateSink(new CodeStoryVideoStreamReceiver, rtc::VideoSinkWants());
+		VideoTrack -> AddOrUpdateSink(&VideoReceiver.Get(), rtc::VideoSinkWants());
 	}
 	
 	Bridge->OnAddTrack(receiver, streams);
